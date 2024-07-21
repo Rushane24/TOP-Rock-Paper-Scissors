@@ -37,10 +37,10 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
-const playerSelection = 'rock';
 
 const game = () => {
     for(let i=0;i<5;i++){
+        const playerSelection = prompt("Choose what to throw", "Rock, Paper, Scissors").toLowerCase();
         const computerSelection = computerPlay();
         playRound(playerSelection, computerSelection);
     }
